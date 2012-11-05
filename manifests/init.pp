@@ -36,5 +36,6 @@ class postfix (
     stop      => 'invoke-rc.d postfix stop',
     start     => 'invoke-rc.d postfix start',
     restart   => 'invoke-rc.d postfix restart',
+    require   => Package['postfix']
   }
 }
